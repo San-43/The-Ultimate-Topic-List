@@ -27,3 +27,5 @@ int main() {
     cout << min_difference << endl;
     return 0;
 }
+
+/// https://cses.fi/problemset/task/1623
