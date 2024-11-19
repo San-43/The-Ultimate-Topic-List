@@ -22,6 +22,8 @@ int main() {
     cout << ans << endl;
 }
 
+/// https://codeforces.com/contest/96/problem/B
+
 /*using namespace std;
 int main() {
     int n;
