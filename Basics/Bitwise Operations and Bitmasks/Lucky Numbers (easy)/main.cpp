@@ -1,5 +1,28 @@
 #include <bits/stdc++.h>
 using namespace std;
+
+int main() {
+    int n;
+    cin >> n;
+
+    uint64_t ans = UINT64_MAX;
+
+    for (int i = 2; i < 11; i += 2) {
+        string s(i / 2, '4');
+        s += string(i / 2, '7');
+
+        do {
+            uint64_t num = stoull(s);
+            if (num >= n) {
+                ans = min(ans, num);
+            }
+        } while (ranges::next_permutation(s).found);
+    }
+
+    cout << ans << endl;
+}
+
+/*using namespace std;
 int main() {
     int n;
     cin >> n;
@@ -22,4 +45,4 @@ int main() {
         }
     }
     cout << ans << endl;
-}
+}*/
